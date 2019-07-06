@@ -1,15 +1,24 @@
 <template>
   <div class="m-header">
     <el-row>
-      <top-bar />
+      <el-col>
+        <top-bar/>
+      </el-col>
+    </el-row>
+    <el-row>
+      <el-col>
+        <search-bar/>
+      </el-col>
     </el-row>
   </div>
 </template>
 <script>
 import topBar from './topbar.vue'
+import searchBar from './searchbar.vue'
 export default {
   components: {
-    topBar
+    topBar,
+    searchBar
   }
 }
 </script>
